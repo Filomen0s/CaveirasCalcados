@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caveira's Cadstro</title>
+    <link rel="stylesheet" href="cadastro.css">
+    <script src="/caveira.js"></script>
+</head>
+<body>
+    <div class="tudo">
+        <img class="imagemLogo" src="../Imagens/CaveiraLogo.png" alt="">
+        <div class = "Nome">
+        <label for="NomeCadastro">Nome:</label>
+        <input type="text" name="NomeCadastro" id="nameCadastro">
+        </div>
+        <div class="email">
+        <label for="emailCadastro">Email:</label>
+        <input type="email" name="emailCadastro" id="emailCadastro">
+        </div>
+        <div class="Senha">
+            <label for="senhaCadastro">Senha:</label>
+            <input type="password"name="senhaCadastro">    
+        </div>
+        <div class="ConfirmSenha">
+            <label class="LabelConfirmar" for="senhaConfirm">Confirmar senha:</label>
+            <input type="password"name="senhaConfirm">    
+        </div>
+
+        <button onclick="Cadastrar()">Cadastrar</button>
+
+        <p>Já é <a href="../Login/Login.html">logado?</a></p>
+    </div>
+</body>
+</html>
