@@ -58,6 +58,7 @@ h3{
     font-size: 23px;
 
     border-radius: 30px;
+    margin-bottom: 30px;
 }
 
 .entrar{
@@ -82,7 +83,7 @@ h3{
     justify-content: center;
     margin: auto;
 
-    margin-left: 740px;
+    margin-left: 585px;
     color: white;
 
     font-size: 120%;
