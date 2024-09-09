@@ -27,15 +27,11 @@ input{
     border-radius: 30px;
     border: solid 3px #949494;
 
-    align-items: center;
-    text-align: center;
-    justify-content: center;
-    margin: auto;
-
     width: 400px;
     height: 40px;
 
     font-size: 130%;
+    display: block;
 }
 
 h3{
@@ -74,19 +70,19 @@ h3{
 }
 
 .nome , .email, .Senha{
-    width: 90px;
+    width: 430px;
     height: 90px;
-    
+    border: solid 1px;
 
     align-items: center;
     text-align: center;
     justify-content: center;
     margin: auto;
 
-    margin-left: 585px;
     color: white;
 
     font-size: 120%;
+    display: flex;
 }
 
 .nome{
@@ -108,5 +104,16 @@ h4{
     margin-bottom: 5px;
     margin-top: 20px;
     font-size: 130%;
+}
+
+.areaDosInput{
+    border: solid px;
+
+    width: 300px;
+
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    margin: auto;
 }
 

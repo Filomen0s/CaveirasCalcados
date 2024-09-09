@@ -4,30 +4,44 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Caveira's Cadstro</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Irish+Grover&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="cadastro.css">
     <script src="/caveira.js"></script>
 </head>
 <body>
     <div class="tudo">
-        <img class="imagemLogo" src="../Imagens/CaveiraLogo.png" alt="">
-        <div class = "Nome">
-        <label for="NomeCadastro">Nome:</label>
+        <img class="LogoCaveira" src="../Imagens/CaveiraLogo.png" alt="">
+        <div class = "nome">
+        <label for="NomeCadastro" class="labelNome">Nome:</label>
         <input type="text" name="NomeCadastro" id="nameCadastro">
         </div>
+
         <div class="email">
-        <label for="emailCadastro">Email:</label>
+        <label for="emailCadastro" class="labelEmail">Email:</label>
         <input type="email" name="emailCadastro" id="emailCadastro">
         </div>
+
         <div class="Senha">
-            <label for="senhaCadastro">Senha:</label>
-            <input type="password"name="senhaCadastro">    
-        </div>
-        <div class="ConfirmSenha">
-            <label class="LabelConfirmar" for="senhaConfirm">Confirmar senha:</label>
-            <input type="password"name="senhaConfirm">    
+            <label for="senhaCadastro" class="labelSenha">Senha:</label>
+            <input type="password"name="senhaCadastro" id="senhaCadastro">    
         </div>
 
-        <button onclick="Cadastrar()">Cadastrar</button>
+        <div class="ConfirmSenha">
+            <div class="labelsConfirmPass">
+                <label class="LabelConfirmar" for="senhaConfirm" >Confirmar</label> <br> <label class="labelSenha">Senha:</label>
+            </div>
+            <input type="password"name="senhaConfirmCadastro" id="senhaConfirmarCadastro">    
+        </div>
+
+        <div class="termosUso">
+            <input type="checkbox" id="checkbox" class="checkbox"> <label>Você concorda com os <a>Termos de Uso e Privacidade</a> da Caveira Calçado's  </label>
+        </div>
+
+        <button class="botaoCadastro" onclick="concluirCadastro()">Cadastrar</button>
 
         <p>Já é <a href="../Login/Login.html">logado?</a></p>
     </div>

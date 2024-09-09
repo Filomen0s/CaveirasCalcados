@@ -1,33 +1,5 @@
-
-.tudo {
-    background-color: #ffffffa9;
-    width: 800px;
-    height: 700px;
-    padding: 1%;
-    border-radius: 20px;
-    box-shadow: 10px 10px 5px #16161681;
-    text-align: center;
-    margin: auto;
-    align-items: center;
-    align-content: center;
-    margin-top: 5%;
-    vertical-align: auto;
-}
-
-.LabelConfirmar {
-    width: 70%;
-    
-}
-
-input{
-    margin: 10px;
-    text-align: center;
-    background-color: #A9A9A9;
-    border-radius: 10px;
-
-    width: 200px;
-    height: 20px;
-    font-size: 100%;
+*{
+    margin: 0;
 }
 
 body{
@@ -35,25 +7,134 @@ body{
     background-repeat: no-repeat;
     background-size: cover ;
     font-family: "Irish Grover", system-ui;
+    font-size: 17px;
+}
+
+.irish-grover-regular {
+    font-family: "Irish Grover", system-ui;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+.tudo {
+    background-color: #ffffff71;
+    width: 800px;
+    height: 700px;
+    padding: 1%;
+    border-radius: 20px;
+    box-shadow: 10px 10px 5px #16161681;
+    
+    align-items: center;
+    text-align: center;
+    align-content: center;
+    margin: auto;
+
+    margin-top: 110px;
+    margin-bottom: 110px;
+    vertical-align: auto;
+    
+}
+
+.LabelConfirmar {
+    width: 70%;
+}
+
+.labelSenha{
+    margin-top: 0%;
+}
+
+.ConfirmSenha{
+    margin-left: -25px ;
+
+}
+
+
+input{
+    text-align: center;
+    background-color: #D9D9D9;
+    border-radius: 30px;
+    border: solid 2px #A9A9A9;
+    
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    margin: auto;
+    margin-bottom: 30px;
+    
+    width: 400px;
+    height: 40px;
+    
+    font-size: 150%;
+    font-family: "Irish Grover", system-ui;
+    font-style: normal;
+}
+
+label{
+    font-size: 130%;
+}
+
+.labelNome , .labelEmail , .labelSenha{
+    vertical-align: 5px;
+}
+
+.labelsConfirmPass{
+    display: inline-block;
+
+    vertical-align: -12px;
 }
 
 button{
     background-color: #DAA520;
-    border-radius: 10px;
+    font-family: "Irish Grover", system-ui;
+    border: solid 3px #000000;
 
-    width: 150px;
-    height: 30px;
-    font-size: 100%;
+    width: 170px;
+    height: 55px;
+    font-size: 23px;
+
+    margin-bottom: 10px;
+
+    border-radius: 30px;
+}
+
+.botaoCadastro{
+    background-color: #DAA520;
+    border-radius: 30px;
+    
+    width: 300px;
+    height: 50px;
+    font-size: 150%;
+
+    font-family: "Irish Grover", system-ui;
+    font-weight: 400;
+    font-style: normal;
 }
 
 
 a{
     color: #DAA520;
-
+    
+    text-shadow: 1px 1px black;
     
 }
-.imagemLogo {
-    width: 70%;
+ 
+.LogoCaveira {
+    width: 60%;
+    margin: 1px;
+    margin-top: -100px;
+}
 
-    margin-top: -300px;
+.termosUso{
+    font-size: 80%;
+}
+
+.checkbox{
+    width: 15px;
+    height: 15px;
+
+
+}
+
+input[type="checkbox"]:checked{
+    accent-color: #DAA520;
 }
