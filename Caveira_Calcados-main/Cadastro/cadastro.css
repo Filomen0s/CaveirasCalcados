@@ -1,11 +1,11 @@
-*{
+* {
     margin: 0;
 }
 
-body{
+body {
     background-image: url("../Imagens/BackgroundCadastro.png");
     background-repeat: no-repeat;
-    background-size: cover ;
+    background-size: cover;
     font-family: "Irish Grover", system-ui;
     font-size: 17px;
 }
@@ -14,16 +14,16 @@ body{
     font-family: "Irish Grover", system-ui;
     font-weight: 400;
     font-style: normal;
-  }
+}
 
 .tudo {
-    background-color: #ffffff71;
+    background-color: #ffffff7c;
     width: 800px;
     height: 700px;
     padding: 1%;
-    border-radius: 20px;
+    border-radius: 40px;
     box-shadow: 10px 10px 5px #16161681;
-    
+
     align-items: center;
     text-align: center;
     align-content: center;
@@ -32,58 +32,59 @@ body{
     margin-top: 110px;
     margin-bottom: 110px;
     vertical-align: auto;
-    
+
 }
 
 .LabelConfirmar {
     width: 70%;
 }
 
-.labelSenha{
+.labelSenha {
     margin-top: 0%;
 }
 
-.ConfirmSenha{
-    margin-left: -25px ;
+.ConfirmSenha {
+    margin-left: -25px;
 
 }
 
 
-input{
+input {
     text-align: center;
     background-color: #D9D9D9;
     border-radius: 30px;
     border: solid 2px #A9A9A9;
-    
+
     align-items: center;
     text-align: center;
     justify-content: center;
     margin: auto;
     margin-bottom: 30px;
-    
+
     width: 400px;
     height: 40px;
-    
+
     font-size: 150%;
-    font-family: "Irish Grover", system-ui;
     font-style: normal;
 }
 
-label{
+label {
     font-size: 130%;
 }
 
-.labelNome , .labelEmail , .labelSenha{
+.labelNome,
+.labelEmail,
+.labelSenha {
     vertical-align: 5px;
 }
 
-.labelsConfirmPass{
+.labelsConfirmPass {
     display: inline-block;
 
     vertical-align: -12px;
 }
 
-button{
+button {
     background-color: #DAA520;
     font-family: "Irish Grover", system-ui;
     border: solid 3px #000000;
@@ -97,10 +98,10 @@ button{
     border-radius: 30px;
 }
 
-.botaoCadastro{
+.botaoCadastro {
     background-color: #DAA520;
     border-radius: 30px;
-    
+
     width: 300px;
     height: 50px;
     font-size: 150%;
@@ -108,33 +109,54 @@ button{
     font-family: "Irish Grover", system-ui;
     font-weight: 400;
     font-style: normal;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-bottom: 20px;
+}
+
+.botaoCadastro:hover{
+    background-color: #876511;
+    color: #e1dfdf ;
 }
 
 
-a{
+a {
     color: #DAA520;
-    
+
     text-shadow: 1px 1px black;
-    
+
 }
- 
+
 .LogoCaveira {
     width: 60%;
     margin: 1px;
     margin-top: -100px;
 }
 
-.termosUso{
+.termosUso {
     font-size: 80%;
 }
 
-.checkbox{
+.checkbox {
     width: 15px;
     height: 15px;
 
 
 }
 
-input[type="checkbox"]:checked{
+input[type="checkbox"]:checked {
     accent-color: #DAA520;
+    cursor: pointer;
+}
+
+input[type="checkbox"]{
+    cursor: pointer;
+}
+
+.nome{
+    margin-top: -50px;
+}
+
+.ConfirmSenha{
+    margin-bottom: 30px;
 }

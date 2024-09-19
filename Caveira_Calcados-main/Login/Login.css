@@ -1,7 +1,7 @@
-body{
+body {
     background-image: url("../Imagens/backgroundLogin.png");
     background-repeat: no-repeat;
-    background-size: cover ;
+    background-size: cover;
     font-family: "Irish Grover", system-ui;
     align-items: center;
     text-align: center;
@@ -9,20 +9,34 @@ body{
     margin: auto;
 }
 
+.container{
+    margin-top: -130px;
+}
+
 .irish-grover-regular {
     font-family: "Irish Grover", system-ui;
     font-weight: 400;
     font-style: normal;
-  }
-  
+}
 
-.logo{
+
+.logo {
     margin-left: 60px;
 }
 
-input{
-    margin: 10px;
+.areaLogo {
+    width: fit-content;
+    border: solid px;
+
+    align-items: center;
     text-align: center;
+    justify-content: center;
+    margin: auto;
+    margin-bottom: 30px;
+}
+
+input {
+    margin: 10px;
     background-color: white;
     border-radius: 30px;
     border: solid 3px #949494;
@@ -31,20 +45,25 @@ input{
     height: 40px;
 
     font-size: 130%;
-    display: block;
+    padding-left: 2%;
 }
 
-h3{
+input::placeholder{
+    font-size: 22px;
+}
+
+h3 {
     color: #ffffff;
     font-weight: 599;
     font-size: 20px;
 }
 
-.email, .Senha {
+.email,
+.Senha {
     color: #ffffff;
 }
 
-.cadastrar{
+.cadastrar {
     background-color: #DAA520;
     font-family: "Irish Grover", system-ui;
     border: solid 3px #000000;
@@ -55,9 +74,11 @@ h3{
 
     border-radius: 30px;
     margin-bottom: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s;
 }
 
-.entrar{
+.entrar {
     background-color: #DAA520;
     font-family: "Irish Grover", system-ui;
     border: solid 3px #000000;
@@ -67,53 +88,81 @@ h3{
     font-size: 23px;
 
     border-radius: 30px;
+    margin-top: 80px;
+    cursor: pointer;
+    transition: background-color 0.3s;
 }
 
-.nome , .email, .Senha{
-    width: 430px;
-    height: 90px;
-    border: solid 1px;
+.entrar:hover, .cadastrar:hover{
+    background-color: #876511;
+    color: #e1dfdf ;
+}
 
-    align-items: center;
-    text-align: center;
-    justify-content: center;
-    margin: auto;
+.voltarPaginaInicial{
+    background-color: #DAA520;
+    font-family: "Irish Grover", system-ui;
+    border: solid 3px #000000;
 
+    width: 130px;
+    height: 45px;
+    font-size: 23px;
+    border-radius: 30px;
+
+    margin-top: 30px;
+    margin-bottom: -60px;
+    margin-right: 85%;
+
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-size: 23px;
+}
+
+.voltarPaginaInicial:hover{
+    background-color: #876511;
+    color: #e1dfdf ;
+}
+
+.nome,
+.email,
+.Senha {
+    width: fit-content;
+    height: 100px;
+
+    border: solid px;
     color: white;
 
     font-size: 120%;
-    display: flex;
 }
 
-.nome{
+.nome {
     margin-top: -70px;
 }
 
-label{
-    margin-left: 2px;
+label {
+    margin-left: -300px;
     margin-bottom: -100px;
     margin-top: 100%;
     font-size: 25px;
 }
 
-.ParteBaixa{
+.ParteBaixa {
     margin-top: -27px;
 }
 
-h4{
+h4 {
     margin-bottom: 5px;
     margin-top: 20px;
     font-size: 130%;
 }
 
-.areaDosInput{
+.areaDosInput {
     border: solid px;
+    margin-top: 200px;
 
-    width: 300px;
+    width: fit-content;
 
     align-items: center;
     text-align: center;
     justify-content: center;
     margin: auto;
 }
-

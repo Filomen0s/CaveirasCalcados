@@ -1,0 +1,74 @@
+body{
+    background-color: #A9A9A9;
+    font-family: "Irish Grover", system-ui;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    margin: auto;
+}
+
+.irish-grover-regular {
+    font-family: "Irish Grover", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.cabecalho{
+    background-color: #D9D9D9;
+    height: 170px;
+    display: flex;
+}
+
+.botaoChuteiras{
+    border-radius: 10px;
+    width: 130px;
+    height: 30px;
+    font-family: "Irish Grover", system-ui;
+    color: white;
+    background-color: #A9A9A9;
+    text-shadow: 1px 1px #000;
+
+    font-size: 100%;
+    text-align: center;
+    align-items: center;
+    align-content: center;
+    margin: auto;
+    margin-left: -10px;
+}
+
+.botaoTenis{
+    border-radius: 10px;
+    width: 130px;
+    height: 30px;
+    font-family: "Irish Grover", system-ui;
+    color: white;
+    background-color: #A9A9A9;
+    text-shadow: 1px 1px #000;
+
+    font-size: 100%;
+    text-align: center;
+    align-items: center;
+    align-content: center;
+    margin: auto;
+    margin-left: -250px;
+}
+
+.irParalogin{
+    border-radius: 10px;
+    width: 130px;
+    height: 30px;
+    font-family: "Irish Grover", system-ui;
+    color: white;
+    background-color: #DAA520;
+    text-shadow: 1px 1px #000;
+
+    font-size: 100%;
+    text-align: center;
+    align-items: center;
+    align-content: center;
+    margin: auto;
+}
+
+img{
+    width: 300px;
+}

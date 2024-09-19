@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Caveira's Login</title>
+    <title>Caveira's Calçados</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -11,37 +12,43 @@
 
 
     <link rel="stylesheet" href="Login.css">
-    <script src="/caveira.js"></script>
+    <script src="Login.js"></script>
 </head>
+
 <body>
-    
+    <button class="voltarPaginaInicial" onclick="irParaInicio()">voltar</button>
+
     <section class="container">
-        <img class="logo" src="../Imagens/LogoPromoCaveira.png">
-      <br>
-
-
-    <!-- Login -->
-<section class="areaDosInput">
-    <div class = "nome">
-        <label for="NomeCadastro">Nome:</label>
-        <input type="text" name="NomeCadastro" id="nameCadastro">
+        <div class="areaLogo">
+            <img class="logo" src="../Imagens/LogoPromoCaveira.png">
         </div>
-        <div class="email">
-        <label for="emailCadastro">E-mail:</label>
-        <input type="email" name="emailCadastro" id="emailCadastro">
-        </div>
-        <div class="Senha">
-            <label for="senhaCadastro">Senha:</label>
-            <input type="password"name="senhaCadastro">    
-        </div><br><br>
-</section>
+
+        <!-- Login -->
+        <section class="areaDosInput">
+            <div class="nome">
+                <label for="NomeCadastro">Nome:</label>
+                <br>
+                <input type="text" name="NomeCadastro" id="nameLogin" placeholder="Nome">
+            </div>
+            <div class="email">
+                <label for="emailCadastro">E-mail:</label>
+                <br>
+                <input type="email" name="emailCadastro" id="emailLogin" placeholder="E-mail">
+            </div>
+            <div class="Senha">
+                <label for="senhaCadastro">Senha:</label>
+                <br>
+                <input type="password" name="senhaCadastro" id="senhaLogin" placeholder="Senha">
+            </div>
+        </section>
 
         <div class="ParteBaixa">
-        <button class="entrar" onclick="Logar()">Entrar</button><br>
-        <h3>Não possui uma conta?</h4>
-        <button class="cadastrar" onclick="IrParaCadastro()">Criar uma conta</button><br>
-    </div>
-    </div>
-    </section>  
+            <button class="entrar" onclick="concluirLogin()">Entrar</button><br>
+            <h3>Não possui uma conta?</h4>
+                <button class="cadastrar" onclick="irParaCadastro()">Criar uma conta</button><br>
+        </div>
+        </div>
+    </section>
 </body>
+
 </html>

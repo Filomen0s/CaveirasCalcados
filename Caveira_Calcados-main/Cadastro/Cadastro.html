@@ -1,44 +1,49 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Caveira's Cadstro</title>
+    <title>Caveira's Calçados</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Irish+Grover&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="cadastro.css">
-    <script src="/caveira.js"></script>
+    <link rel="stylesheet" href="Cadastro.css">
+    <script src="Cadastro.js"></script>
 </head>
+
 <body>
     <div class="tudo">
         <img class="LogoCaveira" src="../Imagens/CaveiraLogo.png" alt="">
-        <div class = "nome">
-        <label for="NomeCadastro" class="labelNome">Nome:</label>
-        <input type="text" name="NomeCadastro" id="nameCadastro">
+        
+        <div class="nome">
+            <label for="NomeCadastro" class="labelNome">Nome:</label>
+            <input type="text" name="NomeCadastro" id="nameCadastro">
         </div>
 
         <div class="email">
-        <label for="emailCadastro" class="labelEmail">Email:</label>
-        <input type="email" name="emailCadastro" id="emailCadastro">
+            <label for="emailCadastro" class="labelEmail">Email:</label>
+            <input type="email" name="emailCadastro" id="emailCadastro">
         </div>
 
         <div class="Senha">
             <label for="senhaCadastro" class="labelSenha">Senha:</label>
-            <input type="password"name="senhaCadastro" id="senhaCadastro">    
+            <input type="password" name="senhaCadastro" id="senhaCadastro">
         </div>
 
         <div class="ConfirmSenha">
             <div class="labelsConfirmPass">
-                <label class="LabelConfirmar" for="senhaConfirm" >Confirmar</label> <br> <label class="labelSenha">Senha:</label>
+                <label class="LabelConfirmar" for="senhaConfirm">Confirmar</label> <br> <label
+                    class="labelSenha">Senha:</label>
             </div>
-            <input type="password"name="senhaConfirmCadastro" id="senhaConfirmarCadastro">    
+            <input type="password" name="senhaConfirmCadastro" id="senhaConfirmarCadastro">
         </div>
 
         <div class="termosUso">
-            <input type="checkbox" id="checkbox" class="checkbox"> <label>Você concorda com os <a>Termos de Uso e Privacidade</a> da Caveira Calçado's  </label>
+            <input type="checkbox" id="checkbox" class="checkbox"> <label>Você concorda com os <a>Termos de Uso e
+                    Privacidade</a> da Caveira Calçado's </label>
         </div>
 
         <button class="botaoCadastro" onclick="concluirCadastro()">Cadastrar</button>
@@ -46,4 +51,5 @@
         <p>Já é <a href="../Login/Login.html">logado?</a></p>
     </div>
 </body>
+
 </html>
