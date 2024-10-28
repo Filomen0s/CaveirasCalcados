@@ -1,0 +1,191 @@
+body{
+    background-color: #A9A9A9;
+    font-family: "Irish Grover", system-ui;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    margin: auto;
+}
+
+.irish-grover-regular {
+    font-family: "Irish Grover", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.cabecalho{
+    background-color: #D9D9D9;
+    height: 170px;
+    
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    display: flex;
+    text-align: center;
+    align-items: center
+
+    
+}
+
+.botoesTenis{
+    width: 70%;
+    border: solid;
+    margin: auto;
+    margin-left: 30px;
+    justify-content: space-around;
+    display:flex
+}
+
+.botaoChuteiras{
+    border-radius: 30px;
+    width: 50%;
+    height: 20%;
+    font-family: "Irish Grover", system-ui;
+    color: white;
+    background-color: #A9A9A9;
+    border: solid 2px #000000;
+
+
+    font-size: 120%;
+    text-align: center;
+    align-items: center;
+    align-content: center;
+    margin: auto;
+    margin-left: -5%;
+    cursor: pointer;
+    border-radius: 30px;
+    transition: 0.3s;
+}
+
+.botaoTenis{
+    border-radius: 10px;
+    width: 50%;
+    height: 20%;
+    font-family: "Irish Grover", system-ui;
+    color: white;
+    background-color: #A9A9A9;
+    border: solid 2px #000000;
+
+
+    font-size: 120%;
+    text-align: center;
+    align-items: center;
+    align-content: center;
+    margin: auto;
+    cursor: pointer;
+    border-radius: 30px;
+    transition: 0.3s;
+}
+
+.botaoCuturnos{
+    border-radius: 30px;
+    width: 50%;
+    height: 20%;
+    font-family: "Irish Grover", system-ui;
+    color: white;
+    background-color: #A9A9A9;
+    border: solid 2px #000000;
+
+
+    font-size: 120%;
+    text-align: center;
+    align-items: center;
+    align-content: center;
+    margin: auto;
+    cursor: pointer;
+    border-radius: 30px;
+    transition: 0.3s;
+}
+
+.botaoChuteiras:hover, .botaoTenis:hover, .botaoCuturnos:hover{
+    color: #353333;
+    background-color: #8f8e8e;
+}
+
+.irParalogin{
+    border-radius: 30px;
+    width: 10%;
+    height: 20%;
+    font-family: "Irish Grover", system-ui;
+    border: solid 2px #000000;
+
+    color: black;
+    background-color: #DAA520;
+
+
+    font-size: 120%;
+    text-align: center;
+    align-items: center;
+    align-content: center;
+    margin: auto;
+    
+    margin-left:  ;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.irParalogin:hover{    
+    background-color: #876511;
+    color: #e1dfdf ;
+}
+
+.barraPesquisa{
+    text-align: center;
+    align-items: center;
+    align-content: center;
+    margin: auto;
+    height: 10%;
+    width: 20%;
+    font-size: 140%;
+    border-top: 0px ;
+    border-left: 0px;
+    border-right: 0px;
+    background-color: #D9D9D9;
+    font-family: "Irish Grover", system-ui;
+
+    margin-right:   ;
+
+}
+
+.barraPesquisa:active{
+    border-top: 0px ;
+    border-left: 0px;
+    border-right: 0px;
+}
+
+.imagemLogo{
+    width: 470px;
+    height: 300px;
+    margin-top:-20px;
+    margin-left: -50px;
+}
+
+.imgInicial{
+    height: 50%;
+    width: 100%;
+}
+
+h2{
+    margin-top: 10px;
+    font-size: 300%;
+}
+
+.fileira1{
+    display: flex;
+    align-content: center;
+    align-items: center;
+    margin: auto;
+    margin-left: 3.3%;
+    margin-top: 3%;
+}
+
+.fotos{
+    height: 380px;
+    width: 380px;
+    margin-left: 5%;
+}
+
+
+p{
+    margin-left: 5%;
+    text-align: left;
+    margin-top: 0%;
+}

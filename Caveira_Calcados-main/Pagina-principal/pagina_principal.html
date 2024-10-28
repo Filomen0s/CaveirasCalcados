@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caveira's Calçados</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Irish+Grover&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="pagina_principal.css">
+    <script src="pagina_principal.js"></script>
+
+</head>
+<body>
+    <div class="cabecalho">
+        <img src="../Imagens/CaveiraLogo.png" class="imagemLogo">
+        
+            <div class="botoesTenis">
+                <button class="botaoChuteiras" onclick="IrParaChuteiras()">Chuteiras</button>
+    
+                <button class="botaoTenis" onclick="IrParaTenis()">Tênis</button>
+    
+                <button class="botaoCuturnos" onclick="IrParaCuturnos()">Cuturnos</button>
+                
+                <input type="text" class="barraPesquisa" id="BarraPsquisa" placeholder="Pesquise um produto">
+                
+                <button class="irParalogin" onclick="irParaCadastro()">Conectar</button> 
+            </div>
+
+            
+
+    </div>
+
+        <img class="imgInicial" src="../Imagens/imagemPaginaInicialCaveirasCalçados.png" alt="">
+
+        <div class="produtos">
+            <h2>Mais Vendidos</h2>
+            <div class="fileira1">
+        
+                <div class="fotos">     
+                    <img class="fotos" src="https://images.tcdn.com.br/img/img_prod/1151954/180_sapato_de_palhaco_classico_bordo_com_branco_em_couro_ref_180_375_1_a02d1595ee4863cebd9b70e5580a51fe.jpg" onclick="PaginaPuroOsso()">
+                    <p>Tênis 1 <br> R$ 100,00</p>
+                </div>
+           
+                <div class="fotos">
+                    <img class="fotos" src="https://images.tcdn.com.br/img/img_prod/1151954/180_sapato_de_palhaco_classico_bordo_com_branco_em_couro_ref_180_375_1_a02d1595ee4863cebd9b70e5580a51fe.jpg" onclick="PaginaTenis2()">
+                    <p>Tênis 2 <br> R$ 100,00</p>
+                </div>
+               
+                <div class="fotos">
+                    <img class="fotos" src="https://images.tcdn.com.br/img/img_prod/1151954/180_sapato_de_palhaco_classico_bordo_com_branco_em_couro_ref_180_375_1_a02d1595ee4863cebd9b70e5580a51fe.jpg" onclick="PaginaTenis3()">
+                    <p>Tênis 3 <br> R$ 100,00</p>
+                </div>
+
+
+            </div>
+        </div>
+
+
+</body>
+</html>

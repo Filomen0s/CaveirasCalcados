@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caveira's Calçados</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Irish+Grover&display=swap" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="Login.css">
+    <script src="Login.js" defer></script>
+</head>
+
+<body>
+    
+    <section class="container">
+        <div class="areaLogo">
+            <img class="logo" src="../Imagens/LogoPromoCaveira.png">
+        </div>
+        
+        <!-- Login -->
+        <section class="areaDosInput">
+            <div class="nome">
+                <label for="NomeCadastro">Nome:</label>
+                <br>
+                <input type="text" name="NomeCadastro" id="nameLogin" placeholder="Nome">
+            </div>
+            <div class="email">
+                <label for="emailCadastro">E-mail:</label>
+                <br>
+                <input type="email" name="emailCadastro" id="emailLogin" placeholder="E-mail">
+            </div>
+            <div class="Senha">
+                <label for="senhaCadastro">Senha:</label>
+                <br>
+                <input type="password" name="senhaCadastro" id="senhaLogin" placeholder="Senha">
+            </div>
+        </section>
+        
+        <div class="ParteBaixa">
+            <div class="flexSenhaeEntrar">
+                <p class="esqSenha" id="abrirModal">Esqueceu sua senha?</u></p>
+                <button class="entrar" onclick="concluirLogin()">Entrar</button><br>
+            </div>
+            <h3>Não possui uma conta?</h3>
+            <button class="cadastrar" onclick="irParaCadastro()">Criar uma conta</button>
+            >
+            <button class="voltarPaginaInicial" onclick="irParaInicio()">voltar</button>
+            
+        </div>
+    </div>
+
+    <div id="fade" class="esconder"></div>
+
+    <div id="modal" class="esconder">
+        <div class="cabecalhoModal">
+            <h1 class="tituloModal">Alteração de senha</h1>
+            <button id="fecharModal">X</button>
+        </div>
+
+        <div class="corpoModal">
+            <div class="areaInputsModal"></div>
+            <label class="labelModal1">Digite sua nova senha</label>
+            <br>
+            <input type="text" id="novaSenha">
+
+            <br>
+            <br>
+
+            <label class="labelModal2">Confirme sua nova senha</label>
+            <br>
+            <input type="password" id="confirmNovaSenha">
+
+            <div class="areaBotoesModal">
+                <button class="btnConfirmTroca" onclick="esqSenha()">Confirmar</button> 
+            </div>
+
+        </div>
+    </div>        
+    </section>
+
+</body>
+
+</html>
