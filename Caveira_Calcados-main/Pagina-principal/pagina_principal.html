@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caveira's Calçados</title>
+
+    <!-- <link rel="shortcut icon" href="../Imagens/logocanto.png"> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Irish+Grover&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="pagina_principal.css">
+    <script src="pagina_principal.js" defer></script>
+
+</head>
+<body>
+    <div class="cabecalho">
+        <img src="../Imagens/CaveiraLogo.png" class="imagemLogo">
+        
+            <div class="botoesTenis">
+                <button class="botaoChuteiras" onclick="IrParaChuteiras()">Chuteiras</button>
+    
+                <button class="botaoTenis" onclick="IrParaTenis()">Tênis</button>
+    
+                <button class="botaoCuturnos" onclick="IrParaCuturnos()">Cuturnos</button>
+                
+                <button class="irParalogin" onclick="irParaLogin()">Conectar</button> 
+
+                <img src="https://cdn.icon-icons.com/icons2/933/PNG/512/shopping-cart_icon-icons.com_72552.png" class="carrinho" onclick="irParaCarrinho()">
+
+                <img src="https://cdn-icons-png.flaticon.com/512/47/47774.png" class="infoUser" id="abrirModal">
+                
+                <div id="fade" class="esconder"></div>
+
+                <div id="modal" class="esconder">
+                    <div class="cabecalhoModal">
+                        <h2 class="tituloModal">Informações da sua conta</h2>
+                    </div>
+
+                    <div class="corpoModal">
+                        <p id="alerta" class="infosUser">Não foi possível acessar suas informações pois você não esta logado em uma conta! <br> Clique no botão "<a class="aConectar">Conectar</a>" ao lado para logar em uma conta!</p>
+                        <p id="nomeUsuario" class="infosUser"></p>
+                        <p id="emailUsuario" class="infosUser"></p>
+                        <p id="senhaUsuario" class="infosUser"></p>
+                    </div>
+                </div>
+            </div>
+    </div>
+
+        <img class="imgInicial" src="../Imagens/imagemPaginaInicialCaveirasCalçados.png">
+
+        <!-- Produtos em destaque -->
+        <div class="destaques">
+
+            <div class="tituloDestaques">
+                <img src="../Imagens/mdestaques.png" class="imgDestaques">
+            </div>
+
+            <div class="fileiraDestaques">
+
+                <!-- Produto destaque 1 -->
+                <div class="produtoDestaque1"> 
+                    <div class="fotoProdutoDestaque">
+                        <img class="imgProdutoDestaque" src="" onclick="PaginaDestaque1()" id="imgDestaque1">
+                    </div>    
+
+                    <div class="infoProdsDestaque">
+                        <p id="nomeDestaque1"></p> 
+                        <p id="precoDestaque1"></p>
+                    </div>
+
+                </div>
+                
+                <!-- Produto destaque 2 -->
+                <div class="produtoDestaque2" id="prod2">
+                    <div class="fotoProdutoDestaque">
+                        <img class="imgProdutoDestaque" src="" onclick="PaginaDestaque2()" id="imgDestaque2">
+                    </div>
+                    
+                    <div class="infoProdsDestaque">
+                        <p id="nomeDestaque2"></p> 
+                        <p id="precoDestaque2"></p>
+                    </div>
+
+                </div>
+               
+                <!-- Produto destaque 3 -->
+                <div class="produtoDestaque3">
+                    <div class="fotoProdutoDestaque">
+                        <img class="imgProdutoDestaque" src="" onclick="PaginaDestaque3()" id="imgDestaque3">
+                    </div>
+
+                    <div class="infoProdsDestaque">
+                        <p id="nomeDestaque3"></p> 
+                        <p id="precoDestaque3"></p>
+                    </div>
+                    
+                </div>
+            </div>
+
+
+        <!-- Produtos mais recentes -->
+        <div class="maisRecentes">
+            
+            <div class="tituloRecente">
+                <img src="../Imagens/maisrecentes.png" class="imgRecentes">
+            </div>
+            
+            <div class="fileiraRecentes">
+                
+                <!-- Primeiro produto -->
+                <div class="produtoRecente1">
+                    <div class="fotoProdutoRecente">
+                        <img src="" class="imgProdutoRecente" id="imgRecente1" onclick="PaginaRecenteTenis()"> 
+                    </div>
+        
+                    <div class="infosProdRecente">
+                        <p id="nomeRecente1"></p>
+                        <p id="precoRecente1"></p>
+                    </div>
+                </div>
+        
+                <!-- Segundo porduto -->
+                <div class="produtoRecente2">
+                    <div class="fotoProdutoRecente">
+                        <img src="" class="imgProdutoRecente" id="imgRecente2" onclick="PaginaRecenteChuteira()">
+                    </div>
+        
+                    <div class="infosProdRecente">
+                        <p id="nomeRecente2"></p>
+                        <p id="precoRecente2"></p>
+                    </div>
+                </div>
+        
+                <!-- Terceiro produto -->
+                <div class="produtoRecente3">
+                    <div class="fotoProdutoRecente">
+                        <img src="" class="imgProdutoRecente" id="imgRecente3" onclick="PaginaRecenteCoturno()">
+                    </div>
+        
+                    <div class="infosProdRecente">
+                        <p id="nomeRecente3"></p>
+                        <p id="precoRecente3"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    
+
+</body>
+</html>

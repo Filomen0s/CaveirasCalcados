@@ -1,0 +1,166 @@
+body{
+    background-color: #B0ABAB;
+
+    padding: 0;
+    margin: 0;
+    background-image: url(../../Imagens/BackChuteira.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.cabecalho{
+    display: flex
+}
+
+p{
+    font-family: "Irish Grover", system-ui;
+}
+
+.btnVoltar{
+    width: 12%;
+    font-size: 23px;
+    margin-left: 6%;
+    cursor: pointer;
+    border-radius: 30%;
+    transition: 0.3s;
+}
+
+.btnVoltar:hover{
+    transform: scale(1.1, 1.1);
+}
+
+.btnTenis{
+    border-radius: 30px;
+    width: 20%;
+    height: 40px;
+    font-family: "Irish Grover", system-ui;
+    color: white;
+    background-color: #A9A9A9;
+    border: solid 2px #000000;
+    margin-top: 4.5%;
+    margin-left: 10%;
+
+
+    font-size: 130%;
+
+    align-items: center;
+    align-content: center;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btnChuteiras:hover{
+    background-color: rgb(143, 143, 143);
+}
+
+.btnCuturnos{
+    border-radius: 30px;
+    width: 20%;
+    height: 40px;
+    font-family: "Irish Grover", system-ui;
+    color: white;
+    background-color: #A9A9A9;
+    border: solid 2px #000000;
+    margin-top: 4.5%;
+    margin-left: 8.5%;
+
+    font-size: 130%;
+
+    align-items: center;
+    align-content: center;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btnCuturnos:hover{
+    background-color: rgb(143, 143, 143);
+}
+
+.Produtos{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    align-content: center;
+    margin: auto;
+    margin-top: -7%;
+}
+
+.produto1, .produto2, .produto3{
+    display: none;
+    width: 100%;
+    height: 100%;
+    /* width: 400px;
+    height: 530px; */
+    width: 360px;
+    height: 460px;
+    border: solid 4px black;
+    border-radius: 10px;
+    background-color: rgba(100, 100, 100, 0.37);
+    padding-top: 0.3%;
+}
+
+.produto2{
+    /* margin-left: 2%;
+    margin-right: 2%; */
+    margin-left: 4%;
+    margin-right: 4%;
+}
+
+.fotoProduto{
+    /* width: 390px;
+    height: 390px; */
+
+    width: 350px;
+    height: 350px;
+
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin: auto;
+}
+
+.imgProduto{
+    width: 100%;
+    height: 100%;
+    /* width: 390px;
+    height: 390px; */
+    width: 350px;
+    height: 350px;
+
+    cursor: pointer;
+    transition: 0.3s;
+    border-radius: 10px;
+}
+
+.imgProduto:hover{
+    transform: scale(1.03, 1.03);
+}
+
+.nomeProdutos{
+    /* font-size: 270%; */
+    font-size: 250%;
+    color: white;
+    text-shadow: 5px 2px black;
+    margin-left: 2%;
+    margin-top: 2%;
+    text-align: left;
+}
+
+.precoProdutos{
+    /* font-size: 190%; */
+    font-size: 170%;
+    color: white;
+    text-shadow: 5px 2px black;
+    margin-left: 2%;
+    margin-top: -11%;
+    text-align: left; 
+}
+
+
+.infoProduto{
+    margin-top: 6px;
+}

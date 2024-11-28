@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Irish+Grover&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="Coturno_2.css">
+    <script src="Coturno_2.js" defer></script>
+    <title>Caveira's Caçados</title>
+</head>
+<body>
+    <section>
+        <!-- Modal -->
+        <!-- <div id="fade" class="esconder" onclick="FecharModal()"></div>
+        <div id="modal" class="esconder">
+            <div class="cabecalhoModal">
+                <h2>Não deu pra comprar</h2>
+            </div>
+
+            <div id="corpoModal">
+                <p>Não deu pq não tá logado!</p>
+            </div>
+        </div> -->
+        <!-- Fim do modal -->
+
+    <div class="cabecalho">
+        <img src="../../../Imagens/LogoPromoCaveira.png" class="imgLogo">
+        <button class="botaoVoltar" onclick="IrParaCoturnos()">Voltar</button>
+    </div>
+
+    <div class="corpoPagina">
+        <div class="imagensProduto">
+            <img src="" class="foto1" id="img1">
+            <img src="" class="foto2" id="img2">
+        </div>
+
+        <div class="descricoes">
+            <h1 class="nomeProduto" id="nomeProduto"></h1>
+            <p class="precoProduto" id="precoProduto"></p>   
+            <details>
+                <summary class="abaDescProduto">Descrição</summary>
+                <p class="descProduto" id="descProduto"></p>
+            </details>
+
+            <div class="botoesTamanho">
+                    <div class="osBotoes">
+                        <button class="numeroTenis" value="tamanho" name="34" id="34" onclick="selecionarTamanho(34)">34</button>
+                        <button class="numeroTenis" value="tamanho" name="35" id="35" onclick="selecionarTamanho(35)">35</button>
+                        <button class="numeroTenis" value="tamanho" name="36" id="36" onclick="selecionarTamanho(36)">36</button>
+                        <button class="numeroTenis" value="tamanho" name="37" id="37" onclick="selecionarTamanho(37)">37</button>
+                        <br>
+                        <button class="numeroTenis" value="tamanho" name="38" id="38" onclick="selecionarTamanho(38)">38</button>
+                        <button class="numeroTenis" value="tamanho" name="39" id="39" onclick="selecionarTamanho(39)">39</button>
+                        <button class="numeroTenis" value="tamanho" name="40" id="40" onclick="selecionarTamanho(40)">40</button>
+                        <button class="numeroTenis" value="tamanho" name="41" id="41" onclick="selecionarTamanho(41)">41</button>
+                        <br>                    
+                        <button class="numeroTenis" value="tamanho" name="42" id="42" onclick="selecionarTamanho(42)">42</button>
+                        <button class="numeroTenis" value="tamanho" name="43" id="43" onclick="selecionarTamanho(43)">43</button>
+                        <button class="numeroTenis" value="tamanho" name="44" id="44" onclick="selecionarTamanho(44)">44</button>
+                        <button class="numeroTenis" value="tamanho" name="45" id="45" onclick="selecionarTamanho(45)">45</button> 
+
+                    </div>
+                </div>
+                <button class="comprar" id="abrirModal" onclick="ComprarProduto()">Adicionar ao carrinho</button>
+            
+            </div>
+            
+        </div>
+    </section>
+</body>
+</html>

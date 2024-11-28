@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Irish+Grover&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="Carrinho.css">
+    <script src="Carrinho.js" defer></script>
+    <title>Caveira's Calçados</title>
+</head>
+<body>
+
+    <div class="cabecalho">
+        <img class="imgCaveiras" src="../Imagens/LogoPromoCaveira.png">
+        <button class="btnVoltar" onclick="voltar()">Voltar</button>
+        <button class="esvaziarCarrinho" onclick="esvaziarCarrinho()">Esvaziar Carrinho</button>
+
+        <button class="btnComprar" id="abrirModal">Finalizar Compra</button>
+    </div>
+    <div id="fade" class="esconder" onclick="esvaziarCarrinho()"></div>
+    <div id="modal" class="esconder">
+        <div class="cabecalhoModal">
+            <h1 class="compraConcluida">Compra concluída!</h1>
+        </div>
+            <h2 class="obg">Obrigado por escolher a Caveira's Calçados para adquirir seus produtos!</h2>
+        <div class="corpoModal">
+
+        </div>
+    </div>
+    
+<div>
+    <ul id="listaProdutos"></ul>
+</div>
+    
+</body>
+</html>

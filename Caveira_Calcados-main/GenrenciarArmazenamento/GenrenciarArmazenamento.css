@@ -1,0 +1,254 @@
+body{
+    align-items: center;
+    text-align: center;
+    align-content: center;
+    justify-content: center;
+    margin: auto;
+    padding: 20px;
+}
+
+.tudo{
+    border: #000000;
+}
+
+html{
+    background: rgb(235,217,217);
+    background: radial-gradient(circle, rgba(235,217,217,1) 12%, rgba(218,201,201,1) 29%, rgba(175,173,173,1) 50%, rgba(168,148,148,1) 72%);
+}
+h1{
+    font-size: 250%;
+    font-family: "Irish Grover", system-ui;
+    margin-bottom: 1%;
+    margin-top: -0.5%;
+}
+
+.infoProdutos{
+    margin: auto;
+    background-color: white;
+    border-radius: 30px;
+    border: solid 2px #949494;
+    margin-bottom: 10px;
+    
+
+    width: 400px;
+    height: 40px;
+
+    font-size: 130%;
+    padding-left: 1.5%;
+    border: solid 2px #000000;
+}
+
+input::placeholder{
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+    font-size: 20px;
+    padding-left: 1.5%;
+}
+
+.cadastrarProduto{
+    background-color: #DAA520;
+    font-family: "Irish Grover", system-ui;
+    border: solid 3px #000000;
+
+    width: 200px;
+    height: 40px;
+
+    border-radius: 30px;
+    margin-bottom: -7px;
+    margin-top: 10px;
+    font-size: 110%;
+    cursor: pointer;
+    transition: background-color 0.3s;  
+}
+
+.limparLista{
+    background-color: #a51107;
+    font-family: "Irish Grover", system-ui;
+    border: solid 3px #000000;
+    color: #fff;
+
+    width: 200px;
+    height: 40px;
+
+    border-radius: 30px;
+    margin-bottom: -7px;
+    margin-top: 10px;
+    font-size: 110%;
+    cursor: pointer;
+    transition: 0.3s;  
+}
+
+.limparLista:hover{
+    background-color: #570c06;
+}
+
+h2{
+    font-size: 170%;
+    font-family: "Irish Grover", system-ui;
+    margin-top: 60px;
+}
+
+
+
+#voltarPaginaInicial{
+    background-color: #DAA520;
+    font-family: "Irish Grover", system-ui;
+    border: solid 3px #000000;
+    color: #000;
+
+    width: 200px;
+    height: 40px;
+
+    border-radius: 30px;
+    margin-bottom: -7px;
+    margin-top: 10px;
+    font-size: 110%;
+    cursor: pointer;
+    transition: background-color 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);  
+}
+
+#voltarPaginaInicial:hover, .cadastrarProduto:hover{
+    background-color: #876511;
+    color: #fff;
+}
+
+#voltarPaginaInicial:active, .cadastrarProduto:active{
+    cursor: progress;
+}
+
+.labelEscolhaTenis{
+    vertical-align: 3px;
+    font-family: "Irish Grover", system-ui;
+    font-size: 150%;
+    margin-right: 37px;
+}
+
+.labelEscolhaChuteira{
+    vertical-align: 3px;
+    font-family: "Irish Grover", system-ui;
+    font-size: 150%;
+    margin-right: px;
+}
+
+.labelEscolhaCoturno{
+    vertical-align: 3px;
+    font-family: "Irish Grover", system-ui;
+    font-size: 150%;
+    margin-right: 6px;
+}
+
+.escolhaProduto{
+    max-height: 90px;
+    width: 150px;
+    border: solid 0px;
+    margin-top: 1%;
+    margin-left: 45%;
+
+}
+
+.inputEscolhaProduto{
+    cursor: pointer;
+    height: 19px;
+    width: 23px;
+    margin-bottom: 1%;
+}
+
+.inputEscolhaProduto:checked{
+    accent-color: #DAA520;
+    cursor:auto;
+}
+
+li{
+    margin-bottom: 3%;
+    font-family: "Irish Grover", system-ui;
+    list-style-type: none;
+}
+
+img{
+    vertical-align: -100%;
+    border-radius: 10px;
+    border: solid 3px #DAA520;
+}
+
+.delete-btn{
+    background-color: #a51107;
+    font-family: "Irish Grover", system-ui;
+    border: solid 2px #000000;
+    color: #fff;
+    width: 7%;
+    font-size: 100%;
+    height: 30px;
+    border-radius: 30px;
+    transition: 0.3s;
+    margin-left: 1%;
+    cursor: pointer;
+
+    vertical-align: -10%;
+}
+
+.delete-btn:hover{
+    background-color: #570c06;
+}
+
+.edit-btn{
+    margin-left: 0.7%;
+    font-family: "Irish Grover", system-ui;
+    width: 11%;
+    font-size: 100%;
+    height: 30px;
+    border-radius: 30px;
+    transition: 0.3s;
+    cursor: pointer;
+    background-color: #DAA520;
+    font-family: "Irish Grover", system-ui;
+    border: solid 3px #000000;
+    color: #000;
+
+    vertical-align: -10%;
+}
+
+.edit-btn:hover{
+    background-color: #876511;
+    color: #fff;   
+}
+
+.destaque-btn{
+    margin-left: 0.7%;
+    font-family: "Irish Grover", system-ui;
+    width: 10%;
+    font-size: 100%;
+    height: 30px;
+    border-radius: 30px;
+    transition: 0.3s;
+    cursor: pointer;
+    background-color: #DAA520;
+    font-family: "Irish Grover", system-ui;
+    border: solid 3px #000000;
+    color: #000;
+    vertical-align: -10%;
+}
+
+.destaque-btn:hover{
+    background-color: #876511;
+    color: #fff;   
+}
+
+.tirarDestaque{
+    background-color: #a51107;
+    font-family: "Irish Grover", system-ui;
+    border: solid 2px #000000;
+    color: #fff;
+    width: 15%;
+    font-size: 100%;
+    height: 30px;
+    border-radius: 30px;
+    transition: 0.3s;
+    margin-left: 1%;
+    cursor: pointer;
+
+    vertical-align: -10%;
+}
+
+.delete-btn:hover{
+    background-color: #570c06;
+}

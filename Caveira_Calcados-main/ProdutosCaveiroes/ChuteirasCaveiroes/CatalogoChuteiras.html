@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caveira's Calçados</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Irish+Grover&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="CatalogoChuteiras.css">
+    <script src="CatalogoChuteiras.js"></script>
+
+</head>
+<body>
+    <div class="cabecalho">
+        <img src="/Imagens/LogoPromoCaveira.png" onclick="VoltarPaginaPrincipal()" class="btnVoltar"> 
+        <button class="btnCuturnos" onclick="IrParaCuturnos()">Cuturnos</button>
+        <button class="btnTenis" onclick="IrParaTenis()">Tênis</button>
+    </div>
+
+    <div class="Produtos">
+        <div class="produto1">
+            <div class="fotoProduto">
+                <img src="" class="imgProduto" onclick="PaginaChuteira_1()" id="imgProduto1">
+            </div>
+            
+            <div class="infoProduto">
+                <p id="nomeProduto1" class="nomeProdutos"></p>
+                <p id="precoProduto1" class="precoProdutos"></p>
+            </div>
+        </div>
+
+        <div class="produto2">
+            <div class="fotoProduto">
+                <img src="" class="imgProduto" onclick="PaginaChuteira_2()" id="imgProduto2">
+            </div>
+            
+            <div class="infoProduto">
+                <p id="nomeProduto2" class="nomeProdutos"></p>
+                <p id="precoProduto2" class="precoProdutos"></p>
+            </div>
+            
+        </div>
+
+        <div class="produto3">
+            <div class="fotoProduto">
+                <img src="" class="imgProduto" onclick="PaginaChuteira_3()" id="imgProduto3">
+            </div>
+            
+            <div class="infoProduto">
+                <p id="nomeProduto3" class="nomeProdutos"></p>
+                <p id="precoProduto3" class="precoProdutos"></p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

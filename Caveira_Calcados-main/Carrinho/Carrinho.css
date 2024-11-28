@@ -1,0 +1,188 @@
+body{
+    background-color: #A9A9A9;
+}
+
+.cabecalho{
+    background-color: #A9A9A9;
+    height: 170px;
+    
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    display: flex;
+    text-align: center;
+    align-items: center;
+    gap: 25px;
+}
+
+.btnVoltar{
+    border-radius: 30px;
+    width: 130px;
+    height: 40px;
+    vertical-align: 9%;
+    font-size: 23px;
+    font-family: "Irish Grover", system-ui;
+    border: solid 2px #000000;  
+
+    margin-left:40px;
+    background-color: #D9D9D9;
+    transition: 0.2s;
+    color: black;
+    cursor: pointer;
+
+    margin-left: -1%;
+}
+
+.btnVoltar:hover{
+    background-color: #bdbcbc;
+    color: white;
+}
+
+.esvaziarCarrinho{
+    background-color: #a51107;
+    font-family: "Irish Grover", system-ui;
+    border: solid 2px #000000;
+    color: #fff;
+
+    width: 200px;
+    height: 40px;
+
+    border-radius: 30px;
+    font-size: 110%;
+    cursor: pointer;
+    transition: 0.3s;  
+}
+
+.esvaziarCarrinho:hover{
+    background-color: #570c06;
+}
+
+.btnComprar{
+    background-color: #DAA520;
+    font-family: "Irish Grover", system-ui;
+    border: solid 2px #000000;
+
+
+    width: 200px;
+    height: 40px;
+
+    border-radius: 30px;
+    font-size: 110%;
+    cursor: pointer;
+    transition: 0.3s;
+    
+}
+
+.btnComprar:hover{
+    background-color: #876511;
+    color: #fff;
+}
+
+.li{
+    font-family: "Irish Grover", system-ui;
+    list-style-type: none;
+    font-size: 40px;
+    
+    display: block;
+
+
+    border: 1px solid ;
+    border-radius: 40px;
+    background-color:rgba(245, 245, 245, 0.5);
+    padding: 15px;
+    margin-bottom: 10px;
+
+}
+
+.li::after{
+    position: top;
+}
+
+.delete-btn{
+    text-align: center;
+    background-color: #a51107;
+    font-family: "Irish Grover", system-ui;
+    border: solid 3px #000000;
+    color: #fff;
+
+    width: 300px;
+    height: 50px;
+
+    border-radius: 30px;
+    margin-bottom: 7px;
+    margin-top: 10px;
+    font-size: 75%;
+    cursor: pointer;
+    transition: 0.3s;  
+    margin-left: 30px;
+    /* vertical-align: 300%; */
+    
+}
+
+.delete-btn:hover{
+    background-color: #570c06;
+}
+
+.imgProduto{
+    border-radius: 40px;
+    border: solid 3px;
+    vertical-align: -360%;
+}
+
+.imgCaveiras{
+    width: 200px;
+    height: auto;
+    
+    margin-bottom: 5px;
+    margin-left: 25px;
+}
+
+/* Modal */
+#fade, #modal{
+    transition: 0.2s;
+    opacity: 1;
+    pointer-events: all; 
+}
+
+#fade{
+    position: fixed;
+    top: 0;
+    left: 0;  
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 5;
+}
+
+#modal{
+    position: fixed;
+    z-index: 10;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    width: 750px;
+    max-width: 90%;
+    border-radius: 10px;
+    font-family: "Irish Grover", system-ui;
+}
+
+
+#fade.esconder, #modal.esconder{
+    opacity: 0;
+    pointer-events: none;   
+}
+
+.compraConcluida{
+    text-decoration: underline #DAA520 10px;
+    text-align: center;
+    margin: auto;
+    
+}
+
+.cabecalhoModal{
+    padding-top: 5px;
+    margin-top: 10px;
+}
+
+.obg{
+    text-align: center;
+}

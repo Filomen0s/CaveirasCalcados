@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Irish+Grover&display=swap" rel="stylesheet">
+    
+    <script src="GenrenciarArmazenamento.js"></script>
+    <link rel="stylesheet" href="GenrenciarArmazenamento.css">
+    <title>Caveira's Calçados</title>
+</head>
+<body>
+    <div class="tudo">
+            <h1>Cadastro de Produto</h1>
+            
+            <div class="areaDosImput">
+                <input class="infoProdutos" type="text" id="nome" placeholder="Nome do Produto" required><br>
+                <input class="infoProdutos" type="number" id="preco" placeholder="Preço do Produto" required><br>
+                <input class="infoProdutos" type="text" id="descricao" placeholder="Descrição do Produto" required><br>
+                <input class="infoProdutos" type="text" id="urlImage" placeholder="URL da imagem do Produto" required><br>
+                <input class="infoProdutos" type="text" id="urlImageExibicao1" placeholder="URL da 1º imagem de exibiçaõ do Produto" required><br>
+                <input class="infoProdutos" type="text" id="urlImageExibicao2" placeholder="URL da 2º imagem de exibiçaõ do Produto" required><br>
+                <div class="escolhaProduto">
+                    <div>
+                    <input class="inputEscolhaProduto" name="escolha" type="radio" id="Tênis" value="tenis">
+                    <label class="labelEscolhaTenis">Tênis</label>
+                    </div>
+        
+                    <div>
+                    <input class="inputEscolhaProduto" name="escolha" type="radio" id="Chuteira" value="chuteira">
+                    <label class="labelEscolhaChuteira">Chuteira</label>
+                    </div>
+                    
+                    <div>
+                    <input class="inputEscolhaProduto" name="escolha" type="radio" id="Cuturno" value="coturno">
+                    <label class="labelEscolhaCoturno">Coturno</label>
+                    </div>
+                </div>
+
+            </div>
+                
+                <button class="cadastrarProduto" type="button" onclick="cadastrarProduto()">Cadastrar Produto</button>
+
+            <div class="listaProdutos" id="produtos">
+                <h2>Produtos Cadastrados</h2>
+                <button class="limparLista" onclick="limparLista()">Limpar lista</button>
+                <ul id="listaProdutos"></ul>
+            </div>
+            <button class="voltarPaginaInicial" id="voltarPaginaInicial" onclick="voltarInicial()">Voltar para ínicio</button>
+        </div>
+
+    
+</body>
+</html>

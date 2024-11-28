@@ -1,0 +1,249 @@
+.irish-grover-regular {
+    font-family: "Irish Grover", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
+body{
+    background-color: #A9A9A9;
+    padding: 0;
+    margin: 0;
+}
+
+.cabecalho{
+    margin-left: 2.5%;
+    display: flex;
+}
+
+.imgLogo{
+    width: 8%;
+    height: 8%;
+
+}
+
+.botaoVoltar{
+    border-radius: 30px;
+    width: 10%;
+    height: 10%;
+    vertical-align: 9%;
+    font-size: 23px;
+    font-family: "Irish Grover", system-ui;
+    border: solid 2px #000000;
+
+    text-align: center;
+    align-items: center;
+    align-items: center;
+    margin-top: 3.5%;
+    margin-left: 1%;
+
+    background-color: #D9D9D9;
+    transition: 0.3s;
+    color: black;
+    cursor: pointer;
+}
+
+.botaoVoltar:hover{
+    background-color: #bdbcbc;
+    color: white;
+}
+
+.corpoPagina{
+    display: flex;
+}
+
+.imagensProduto{
+    border: solid 0px;
+    display: flex;
+    margin-left: 1%;
+    margin-bottom: 1%;
+    margin-right: -5%;
+}
+
+.foto1, .foto2{
+    width: 100%;
+    height: 100%;
+    width: 500px;
+    height: 500px;
+    max-width: 500px;
+    max-height: 500px;
+    border: 0.1px solid #878686;
+    border-radius: 13px;
+    margin-left: 10px;
+    margin-top: 2%;
+    box-shadow: 6px 8px 8px 1px #605e5e;
+}
+
+.foto1{
+    margin-left: 30px;
+}
+
+
+.descricoes {
+    border: transparent;
+    width: 40%;
+    height: 10%;
+    
+    margin-left: 7%;
+    margin-bottom: 20px;
+}
+
+details{
+    margin: 10px auto ;
+    margin-right: 20px;
+    background: #b1b0b0;
+    margin-bottom: 40px;
+    box-shadow: 0 .1rem 1rem -.5rem rgba(0,0,0,.4);
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+summary {
+    margin-left: 10px;
+    padding: 1rem;
+    display: block;
+    background: #b1b0b0;
+    padding-left: 2.2rem;
+    position: relative;
+    cursor: pointer;
+    user-select: none;
+}
+
+summary:before {
+    content: '';
+    border-width: .4rem;
+    border-style: solid;
+    border-color: transparent transparent transparent #000000;
+    position: absolute;
+    top: 1.3rem;
+    left: 1rem;
+    transform: rotate(0);
+    transform-origin: .2rem 50%;
+    transition: .25s transform ease;
+  }
+  
+ 
+  details[open] > summary:before {
+    transform: rotate(90deg);
+  }
+  
+  
+  details summary::-webkit-details-marker {
+    display:none;
+  }
+  
+  details > ul {
+    padding-bottom: 1rem;
+    margin-bottom: 0;
+  }
+
+.nomeProduto{
+    font-size: 60px;
+    font-family: "Irish Grover", system-ui;
+    margin-top: 4%;
+}
+
+.osBotoes{
+    margin-top: -6%;
+}
+
+.numeroTenis{
+    width: 40px;
+    height: 39px;
+    border-radius: 100px;
+    overflow: hidden;
+
+    
+    cursor: pointer;
+    margin-top: 20px;
+    
+    background-color: #777777;
+    transition: 0.2s;
+    box-shadow:  3px 3px 7px 1px #16161681;
+}
+
+.numeroTenis:hover{
+    transform: scale(1.05,1.05);
+}
+
+.abaDescProduto{
+    font-family: "Irish Grover", system-ui;
+}
+
+.comprar{
+    margin-top: 20px;
+    width: 260px;
+    height: 40px;
+    background-color: #DAA520;
+    border-radius: 10px;
+
+    font-size: 150%;
+    font-family: "Irish Grover", system-ui;
+    transition: all 0.25s ease;
+    cursor: pointer;
+}
+
+.comprar:hover{
+    background-color: #876511;
+    color: #fff;
+}
+.comprar:active{
+    transform: scale(1.03, 1.03);
+}
+
+.botoesTamanho{
+    border: transparent;
+    display: flex;
+    width: fit-content;
+    height: fit-content;
+    gap: 7px;
+    border-radius: 200px;
+}
+
+
+.precoProduto{
+    font-size: 30px;
+    font-family:"Irish Grover", system-ui;
+
+    margin-top: -6%;
+    margin-bottom: 4%;
+}
+
+p{
+    margin-left: 10px;
+}
+
+/* Modal */
+/* #fade, #modal{
+    transition: 0.2s;
+    opacity: 1;
+    pointer-events: all; 
+}
+
+#fade{
+    position: fixed;
+    cursor: pointer;
+    top: 0;
+    left: 0;  
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 8; 
+}
+
+#modal{
+    position: fixed;
+    z-index: 9; 
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    width: 700px;
+    max-width: 90%;
+    border-radius: 10px;
+}
+
+#fade.esconder, #modal.esconder{
+    opacity: 0;
+    pointer-events: none;
+    display: none;   
+} */
