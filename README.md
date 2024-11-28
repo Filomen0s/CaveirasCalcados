@@ -5,3 +5,11 @@ Projeto de uma loja online de calçados feito com HTML, CSS e JS. Esse projeto p
 <br>
 
 <h2 align="center">💀Imagens do projeto💀</h2>
+
+<img src="Imagens/Página Inicial.png">
+<br>
+<img src="Imagens/Catalogo de Produtos.png">
+<br>
+<img src="Imagens/Página de Login.png">
+<br>
+<img src="Imagens/Gerenciar Armazenamento.png">
