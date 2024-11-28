@@ -249,6 +249,6 @@ img{
     vertical-align: -10%;
 }
 
-.delete-btn:hover{
+.delete-btn:hover, .tirarDestaque:hover{
     background-color: #570c06;
 }

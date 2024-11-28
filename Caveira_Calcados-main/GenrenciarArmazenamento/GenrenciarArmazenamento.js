@@ -26,6 +26,8 @@ function cadastrarProduto() {
             if (produto.nome && produto.preco && produto.descricao && produto.tipo) {
 
                 // Colocando produtos cadastrados nos respectivos local storages
+
+                //Tenis
                 if(produto.tipo == "tenis"){
                     let produtosTenis = JSON.parse(localStorage.getItem('produtosTenis')) || [];
                     if(produtoEditando !== null){
@@ -38,6 +40,8 @@ function cadastrarProduto() {
                     
                     limparFormulario();
                     exibirProdutos();
+
+                    //Chuteira
                 }else if(produto.tipo == "chuteira"){
                     let produtosChuteiras = JSON.parse(localStorage.getItem('produtosChuteiras')) || [];
                     if(produtoEditando !== null){
@@ -50,6 +54,8 @@ function cadastrarProduto() {
 
                     limparFormulario();
                     exibirProdutos();
+
+                    //Coturno
                 } else if (produto.tipo == "coturno"){
                     let produtosCoturnos = JSON.parse(localStorage.getItem('produtosCoturnos')) || [];
                     if(produtoEditando !== null){
@@ -115,21 +121,29 @@ function cadastrarProduto() {
               
               li.textContent = `${produto.nome} - R$${produto.preco} - ${produto.descricao} - ${produto.tipo}`;
               
+
+              //deletar
               const deleteBtn = document.createElement('button');
               deleteBtn.textContent = 'Deletar';
               deleteBtn.classList.add('delete-btn');
               deleteBtn.onclick = () => deletarProdutoTenis(produto.nome);
+            
 
+              //editar
               const editBtn = document.createElement('button');
               editBtn.textContent = 'Editar Produto';
               editBtn.classList.add('edit-btn');
               editBtn.onclick = () => editarProdutoTenis(i); 
 
+
+              //destaque
               const destaqueBtnTenis = document.createElement('button');
               destaqueBtnTenis.textContent = 'Destaque';
               destaqueBtnTenis.classList.add('destaque-btn');
               destaqueBtnTenis.onclick = () => destacarProdutoTenis(i);
 
+
+              //Tirar destaque
               const tirarDestaquebtnTenis = document.createElement('button');
               tirarDestaquebtnTenis.textContent = 'Tirar dos destaques';
               tirarDestaquebtnTenis.classList.add('tirarDestaque');
@@ -139,7 +153,7 @@ function cadastrarProduto() {
               li.prepend(imgExib1);
               li.prepend(img);
               li.appendChild(deleteBtn);
-              li.appendChild(destaqueBtnTenis);
+              li.prepend(destaqueBtnTenis);
               li.prepend(editBtn);
               li.appendChild(tirarDestaquebtnTenis);
               listaProdutos.appendChild(li);
@@ -196,7 +210,7 @@ function cadastrarProduto() {
             li.prepend(imgExib1);
             li.prepend(img);
             li.appendChild(deleteBtn);
-            li.appendChild(destaqueBtnChuteira);
+            li.prepend(destaqueBtnChuteira);
             li.prepend(editBtn);
             li.appendChild(tirarDestaquebtnChuteira);
             listaProdutos.appendChild(li);
@@ -252,7 +266,7 @@ function cadastrarProduto() {
                 li.prepend(imgExib1);
                 li.prepend(img);
                 li.appendChild(deleteBtn);
-                li.appendChild(destaqueBtnCoturno);
+                li.prepend(destaqueBtnCoturno);
                 li.prepend(editBtn);
                 li.appendChild(tirarDestaquebtnCoturno);
                 listaProdutos.appendChild(li);
@@ -262,6 +276,8 @@ function cadastrarProduto() {
         // Colocar e tirar um tenis dos destaques
         function destacarProdutoTenis(index){
             const produto = JSON.parse(localStorage.getItem('produtosTenis')) || [];
+
+            
             destaque = {
                 nome: produto[index].nome,
                 url: produto[index].urlImage,
