@@ -153,7 +153,7 @@ function MostrarProdutosRecentes(){
 }
 
 function irParaLogin(){
-    window.location.href = "../Login/Login.html"
+    window.location.href = "/Login/Login.html"
 }
 
 function PaginaRecenteTenis(){
@@ -162,11 +162,11 @@ function PaginaRecenteTenis(){
 
     if(produtosTenis != null){
         if(produtosTenis[0].nome == nomeProdRec1.innerHTML){
-            window.location.href = "../ProdutosCaveiroes/TenisCaveiroes/Tenis_1/Tenis_1.html"  
+            window.location.href = "/ProdutosCaveiroes/TenisCaveiroes/Tenis_1/Tenis_1.html"  
         }else if(produtosTenis[1].nome == nomeProdRec1.innerHTML){
-            window.location.href = "../ProdutosCaveiroes/TenisCaveiroes/Tenis_2/Tenis_2.html"
+            window.location.href = "/ProdutosCaveiroes/TenisCaveiroes/Tenis_2/Tenis_2.html"
         } else if(produtosTenis[2].nome == nomeProdRec1.innerHTML){
-            window.location.href = "../ProdutosCaveiroes/TenisCaveiroes/Tenis_3/Tenis_3.html"
+            window.location.href = "/ProdutosCaveiroes/TenisCaveiroes/Tenis_3/Tenis_3.html"
         }
     }
 }
@@ -177,11 +177,11 @@ function PaginaRecenteChuteira(){
 
     if(produtosChuteiras != null){
         if(produtosChuteiras[0].nome == nomeProdRec2.innerHTML){
-            window.location.href = "../ProdutosCaveiroes/ChuteirasCaveiroes/Chuteira_1/Chuteira_1.html"
+            window.location.href = "/ProdutosCaveiroes/ChuteirasCaveiroes/Chuteira_1/Chuteira_1.html"
         }else if(produtosChuteiras[1].nome == nomeProdRec2.innerHTML){
-            window.location.href = "../ProdutosCaveiroes/ChuteirasCaveiroes/Chuteira_2/Chuteira_2.html"
+            window.location.href = "/ProdutosCaveiroes/ChuteirasCaveiroes/Chuteira_2/Chuteira_2.html"
         } else if(produtosChuteiras[2].nome == nomeProdRec2.innerHTML){
-            window.location.href = "../ProdutosCaveiroes/ChuteirasCaveiroes/Chuteira_3/Chuteira_3.html"
+            window.location.href = "/ProdutosCaveiroes/ChuteirasCaveiroes/Chuteira_3/Chuteira_3.html"
         }
     }
 }
@@ -192,41 +192,41 @@ function PaginaRecenteCoturno(){
 
     if(produtosCoturnos != null){
         if(produtosCoturnos[0].nome == nomeProdRec3.innerHTML){
-            window.location.href = "../ProdutosCaveiroes/CoturnosCaveiroes/Coturno_1/Coturno_1.html"
+            window.location.href = "/ProdutosCaveiroes/CoturnosCaveiroes/Coturno_1/Coturno_1.html"
         }else if(produtosCoturnos[1].nome == nomeProdRec3.innerHTML){
-            window.location.href = "../ProdutosCaveiroes/CoturnosCaveiroes/Coturno_2/Coturno_2.html"
+            window.location.href = "/ProdutosCaveiroes/CoturnosCaveiroes/Coturno_2/Coturno_2.html"
         } else if(produtosCoturnos[2].nome == nomeProdRec3.innerHTML){
-            window.location.href = "../ProdutosCaveiroes/CoturnosCaveiroes/Coturno_3/Coturno_3.html"
+            window.location.href = "/ProdutosCaveiroes/CoturnosCaveiroes/Coturno_3/Coturno_3.html"
         }
     }
 }
 
 function PaginaDestaque1(){
-    window.location.href = '../Paginas_Destaque/Destaque1/Destaque1.html'
+    window.location.href = 'Paginas_Destaque/Destaque1/Destaque1.html'
 }
 
 function PaginaDestaque2(){
-    window.location.href = '../Paginas_Destaque/Destaque2/Destaque2.html'
+    window.location.href = 'Paginas_Destaque/Destaque2/Destaque2.html'
 }
 
 function PaginaDestaque3(){
-    window.location.href = '../Paginas_Destaque/Destaque3/Destaque3.html'
+    window.location.href = 'Paginas_Destaque/Destaque3/Destaque3.html'
 }
 
 function IrParaTenis(){
-    window.location.href = "../ProdutosCaveiroes/TenisCaveiroes/CatalogoTenis.html"
+    window.location.href = "ProdutosCaveiroes/TenisCaveiroes/CatalogoTenis.html"
 }
 
 function IrParaCuturnos(){
-    window.location.href = "../ProdutosCaveiroes/CoturnosCaveiroes/CatalogoCoturnos.html"
+    window.location.href = "ProdutosCaveiroes/CoturnosCaveiroes/CatalogoCoturnos.html"
 }
 
 function IrParaChuteiras(){
-    window.location.href = "../ProdutosCaveiroes/ChuteirasCaveiroes/CatalogoChuteiras.html"
+    window.location.href = "ProdutosCaveiroes/ChuteirasCaveiroes/CatalogoChuteiras.html"
 }
     
 function irParaCarrinho(){
-    window.location.href = "../Carrinho/Carrinho.html"
+    window.location.href = "Carrinho/Carrinho.html"
 }
 
 

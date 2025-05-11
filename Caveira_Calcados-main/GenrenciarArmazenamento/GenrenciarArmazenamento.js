@@ -366,6 +366,7 @@ function cadastrarProduto() {
             produtosDestaque = produtosDestaque.filter(produto => produto.nome !== nome);
             localStorage.setItem('destaque', JSON.stringify(produtosDestaque)); 
 
+            tirarDestaqueTenis(nome);
             exibirProdutos();
         }
 
@@ -379,6 +380,7 @@ function cadastrarProduto() {
             produtosDestaque = produtosDestaque.filter(produto => produto.nome !== nome);
             localStorage.setItem('destaque', JSON.stringify(produtosDestaque)); 
 
+            tirarDestaqueChuteira(nome);
             exibirProdutos();
         }
 
@@ -392,6 +394,7 @@ function cadastrarProduto() {
             produtosDestaque = produtosDestaque.filter(produto => produto.nome !== nome);
             localStorage.setItem('destaque', JSON.stringify(produtosDestaque)); 
 
+            tirarDestaqueCoturno(nome);
             exibirProdutos();
         }
         
@@ -446,7 +449,7 @@ function cadastrarProduto() {
         }        
 
         function voltarInicial(){
-            window.location.href = "../Pagina-principal/pagina_principal.html"
+            window.location.href = "../index.html"
         }
         
         window.onload = exibirProdutos;

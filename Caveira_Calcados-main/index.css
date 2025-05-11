@@ -5,6 +5,8 @@ body{
     text-align: center;
     justify-content: center;
     margin: auto;
+    margin: 0svb;
+    overflow:none; 
 }
 
 .irish-grover-regular {
@@ -257,7 +259,9 @@ body{
 
 .imgInicial{
     height: 50%;
-    width: 100%;
+    width: 100.13%;
+    margin: 0svb;
+    margin-left: -0.15%;
 }
 
 /* Parte dos destaques */

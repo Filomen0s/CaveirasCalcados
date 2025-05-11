@@ -37,7 +37,7 @@ function concluirLogin() {
                 alert("Alguma Informação está errada!!!")
             } else {
                 if (obj.NomeLogin == Bancodados.name && obj.EmailLogin == Bancodados.email && obj.SenhaLogin == Bancodados.senha) {
-                    window.location.href = "../Pagina-principal/pagina_principal.html"
+                    window.location.href = "/../index.html"
 
                     let nomeUser = obj.NomeLogin
                     let emailUser = obj.EmailLogin
@@ -66,7 +66,7 @@ function irParaCadastro() {
 }
 
 function irParaInicio(){
-    window.location.href = "../Pagina-principal/pagina_principal.html"
+    window.location.href = "../index.html"
 }
 
 function esqSenha(){

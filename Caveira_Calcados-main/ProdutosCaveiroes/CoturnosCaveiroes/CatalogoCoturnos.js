@@ -53,7 +53,7 @@ function MostrarItens() {
 }
 
 function VoltarPaginaPrincipal(){
-    window.location.href = "../../Pagina-principal/pagina_principal"
+    window.location.href = "../../index.html"
 }
 
 function PaginaCoturno_1(){

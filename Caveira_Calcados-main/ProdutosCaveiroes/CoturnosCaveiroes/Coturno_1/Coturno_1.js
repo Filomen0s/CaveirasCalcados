@@ -77,7 +77,7 @@ function FecharModal(){
 }
 
 function VoltarPaginaPrincipal(){
-    window.location.href = "../../../Pagina-principal/pagina_principal.html"
+    window.location.href = "../../index.html"
 }
 
 function IrParaCoturnos(){
