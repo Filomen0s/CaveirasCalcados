@@ -9,6 +9,10 @@ Projeto de uma loja online de calçados feito com HTML, CSS e JS. Esse projeto p
 
 <img src="Images/Página Inicial.png">
 <br>
+<img scr="Images/Destaques.png">
+<br>
+<img scr="Images/Recentes.png">
+<br>
 <img src="Images/Catalogo de Produtos.png">
 <br>
 <img src="Images/Página de Login.png">
