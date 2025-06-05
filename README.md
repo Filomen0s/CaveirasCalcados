@@ -2,7 +2,7 @@
 Projeto de uma loja online de calçados feito com HTML, CSS e JS. Esse projeto possui sistema de cadastro de e login de usuários, cadastro e remoção de produtos (função que só administradores podem acessar) e modais. 
 
 <br>
- <h3 aling="center"><a href="https://caveirascalcados.netlify.app/">Link do projeto</a></h3>
+ <h3><a aling="center" href="https://caveirascalcados.netlify.app/">Link do projeto</a></h3>
 <br>
 
 <h2 align="center">💀Imagens do projeto💀</h2>
