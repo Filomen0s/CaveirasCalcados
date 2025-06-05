@@ -69,7 +69,7 @@ function esvaziarCarrinho() {
 }
 
 function voltar(){
-    window.location.href = "../Pagina-principal/pagina_principal.html"
+    window.location.href = "../index.html"
 }
 
 window.onload = mostrarItens;
