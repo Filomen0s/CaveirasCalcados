@@ -97,66 +97,80 @@ function cadastrarProduto() {
 
           //tenis
           for (let i in produtosTenis) {
-              const produto = produtosTenis[i];
-              const li = document.createElement('li');
-
-              const img = document.createElement('img');
-              const imgExib1 = document.createElement('img');
-              const imgExib2 = document.createElement('img');
-
-              img.src = produto.urlImage;
-              img.style.margin = '5px'; 
-              img.style.width = '100px'; 
-              img.style.height = 'auto';
-
-              imgExib1.src = produto.urlImageExibir1;
-              imgExib1.style.margin = '5px'; 
-              imgExib1.style.width = '100px'; 
-              imgExib1.style.height = 'auto';
-
-              imgExib2.src = produto.urlImageExibir2;
-              imgExib2.style.margin = '5px'; 
-              imgExib2.style.width = '100px'; 
-              imgExib2.style.height = 'auto';
-              
-              li.textContent = `${produto.nome} - R$${produto.preco} - ${produto.descricao} - ${produto.tipo}`;
-              
-
-              //deletar
-              const deleteBtn = document.createElement('button');
-              deleteBtn.textContent = 'Deletar';
-              deleteBtn.classList.add('delete-btn');
-              deleteBtn.onclick = () => deletarProdutoTenis(produto.nome);
+            const produto = produtosTenis[i];
+            const li = document.createElement('li');
             
-
-              //editar
-              const editBtn = document.createElement('button');
-              editBtn.textContent = 'Editar Produto';
-              editBtn.classList.add('edit-btn');
-              editBtn.onclick = () => editarProdutoTenis(i); 
-
-
-              //destaque
-              const destaqueBtnTenis = document.createElement('button');
-              destaqueBtnTenis.textContent = 'Destaque';
-              destaqueBtnTenis.classList.add('destaque-btn');
-              destaqueBtnTenis.onclick = () => destacarProdutoTenis(i);
-
-
-              //Tirar destaque
-              const tirarDestaquebtnTenis = document.createElement('button');
-              tirarDestaquebtnTenis.textContent = 'Tirar dos destaques';
-              tirarDestaquebtnTenis.classList.add('tirarDestaque');
-              tirarDestaquebtnTenis.onclick = () => tirarDestaqueTenis(produto.nome);
-              
-              li.prepend(imgExib2);
-              li.prepend(imgExib1);
-              li.prepend(img);
-              li.appendChild(deleteBtn);
-              li.prepend(destaqueBtnTenis);
-              li.prepend(editBtn);
-              li.appendChild(tirarDestaquebtnTenis);
-              listaProdutos.appendChild(li);
+            // Criar container para botões
+            const botoesContainer = document.createElement('div');
+            botoesContainer.className = 'linha-botoes';
+            
+            // Botão Editar
+            const editBtn = document.createElement('button');
+            editBtn.textContent = 'Editar';
+            editBtn.classList.add('edit-btn');
+            editBtn.onclick = () => editarProdutoTenis(i);
+            
+            // Botão Destaque
+            const destaqueBtnTenis = document.createElement('button');
+            destaqueBtnTenis.textContent = 'Destaque';
+            destaqueBtnTenis.classList.add('destaque-btn');
+            destaqueBtnTenis.onclick = () => destacarProdutoTenis(i);
+            
+            // Botão Tirar Destaque
+            const tirarDestaquebtnTenis = document.createElement('button');
+            tirarDestaquebtnTenis.textContent = 'Tirar Destaque';
+            tirarDestaquebtnTenis.classList.add('tirarDestaque');
+            tirarDestaquebtnTenis.onclick = () => tirarDestaqueTenis(produto.nome);
+            
+            // Botão Deletar
+            const deleteBtn = document.createElement('button');
+            deleteBtn.textContent = 'Deletar';
+            deleteBtn.classList.add('delete-btn');
+            deleteBtn.onclick = () => deletarProdutoTenis(produto.nome);
+            
+            // Adiciona botões ao container
+            botoesContainer.appendChild(editBtn);
+            botoesContainer.appendChild(destaqueBtnTenis);
+            botoesContainer.appendChild(tirarDestaquebtnTenis);
+            botoesContainer.appendChild(deleteBtn);
+            
+            // Criar container para imagens
+            const imagensContainer = document.createElement('div');
+            imagensContainer.className = 'linha-imagens';
+            
+            // Criar imagens
+            const img = document.createElement('img');
+            img.src = produto.urlImage;
+            img.style.width = '100px';
+            img.style.margin = '5px';
+            
+            const imgExib1 = document.createElement('img');
+            imgExib1.src = produto.urlImageExibir1;
+            imgExib1.style.width = '100px';
+            imgExib1.style.margin = '5px';
+            
+            const imgExib2 = document.createElement('img');
+            imgExib2.src = produto.urlImageExibir2;
+            imgExib2.style.width = '100px';
+            imgExib2.style.margin = '5px';
+            
+            // Adiciona imagens ao container
+            imagensContainer.appendChild(img);
+            imagensContainer.appendChild(imgExib1);
+            imagensContainer.appendChild(imgExib2);
+            
+            // Criar container para texto
+            const textoContainer = document.createElement('div');
+            textoContainer.className = 'linha-texto';
+            textoContainer.textContent = `${produto.nome} - R$${produto.preco} - ${produto.descricao} - ${produto.tipo}`;
+            
+            // Montar a li final
+            li.appendChild(botoesContainer);
+            li.appendChild(imagensContainer);
+            li.appendChild(textoContainer);
+            
+            // Adicionar ao DOM
+            listaProdutos.appendChild(li);
           }
 
 
@@ -164,112 +178,156 @@ function cadastrarProduto() {
           for (let i in produtosChuteiras) {
             const produto = produtosChuteiras[i];
             const li = document.createElement('li');
-
-            const img = document.createElement('img');
-            const imgExib1 = document.createElement('img');
-            const imgExib2 = document.createElement('img');
-
-            img.src = produto.urlImage;
-            img.style.margin = '5px'; 
-            img.style.width = '100px'; 
-            img.style.height = 'auto';
-
-            imgExib1.src = produto.urlImageExibir1;
-            imgExib1.style.margin = '5px'; 
-            imgExib1.style.width = '100px'; 
-            imgExib1.style.height = 'auto';
-
-            imgExib2.src = produto.urlImageExibir2;
-            imgExib2.style.margin = '5px'; 
-            imgExib2.style.width = '100px'; 
-            imgExib2.style.height = 'auto';
             
-            li.textContent = `${produto.nome} - R$${produto.preco} - ${produto.descricao} - ${produto.tipo}`;
+            // Criar container para botões
+            const botoesContainer = document.createElement('div');
+            botoesContainer.className = 'linha-botoes';
             
+            // Botão Editar
+            const editBtn = document.createElement('button');
+            editBtn.textContent = 'Editar';
+            editBtn.classList.add('edit-btn');
+            editBtn.onclick = () => editarProdutoChuteira(i);
+            
+            // Botão Destaque
+            const destaqueBtnTenis = document.createElement('button');
+            destaqueBtnTenis.textContent = 'Destaque';
+            destaqueBtnTenis.classList.add('destaque-btn');
+            destaqueBtnTenis.onclick = () => destacarProdutoChuteiras(i);
+            
+            // Botão Tirar Destaque
+            const tirarDestaquebtnTenis = document.createElement('button');
+            tirarDestaquebtnTenis.textContent = 'Tirar Destaque';
+            tirarDestaquebtnTenis.classList.add('tirarDestaque');
+            tirarDestaquebtnTenis.onclick = () => tirarDestaqueChuteira(produto.nome);
+            
+            // Botão Deletar
             const deleteBtn = document.createElement('button');
             deleteBtn.textContent = 'Deletar';
             deleteBtn.classList.add('delete-btn');
             deleteBtn.onclick = () => deletarProdutoChuteira(produto.nome);
-
-            const editBtn = document.createElement('button');
-            editBtn.textContent = 'Editar Produto';
-            editBtn.classList.add('edit-btn');
-            editBtn.onclick = () => editarProdutoChuteira(i); 
-
-            const destaqueBtnChuteira = document.createElement('button');
-            destaqueBtnChuteira.textContent = 'Destaque';
-            destaqueBtnChuteira.classList.add('destaque-btn');
-            destaqueBtnChuteira.onclick = () => destacarProdutoChuteiras(i);
             
-            const tirarDestaquebtnChuteira = document.createElement('button');
-            tirarDestaquebtnChuteira.textContent = 'Tirar dos destaques';
-            tirarDestaquebtnChuteira.classList.add('tirarDestaque');
-            tirarDestaquebtnChuteira.onclick = () => tirarDestaqueChuteira(produto.nome);
+            // Adiciona botões ao container
+            botoesContainer.appendChild(editBtn);
+            botoesContainer.appendChild(destaqueBtnTenis);
+            botoesContainer.appendChild(tirarDestaquebtnTenis);
+            botoesContainer.appendChild(deleteBtn);
             
-            li.prepend(imgExib2);
-            li.prepend(imgExib1);
-            li.prepend(img);
-            li.appendChild(deleteBtn);
-            li.prepend(destaqueBtnChuteira);
-            li.prepend(editBtn);
-            li.appendChild(tirarDestaquebtnChuteira);
+            // Criar container para imagens
+            const imagensContainer = document.createElement('div');
+            imagensContainer.className = 'linha-imagens';
+            
+            // Criar imagens
+            const img = document.createElement('img');
+            img.src = produto.urlImage;
+            img.style.width = '100px';
+            img.style.margin = '5px';
+            
+            const imgExib1 = document.createElement('img');
+            imgExib1.src = produto.urlImageExibir1;
+            imgExib1.style.width = '100px';
+            imgExib1.style.margin = '5px';
+            
+            const imgExib2 = document.createElement('img');
+            imgExib2.src = produto.urlImageExibir2;
+            imgExib2.style.width = '100px';
+            imgExib2.style.margin = '5px';
+            
+            // Adiciona imagens ao container
+            imagensContainer.appendChild(img);
+            imagensContainer.appendChild(imgExib1);
+            imagensContainer.appendChild(imgExib2);
+            
+            // Criar container para texto
+            const textoContainer = document.createElement('div');
+            textoContainer.className = 'linha-texto';
+            textoContainer.textContent = `${produto.nome} - R$${produto.preco} - ${produto.descricao} - ${produto.tipo}`;
+            
+            // Montar a li final
+            li.appendChild(botoesContainer);
+            li.appendChild(imagensContainer);
+            li.appendChild(textoContainer);
+            
+            // Adicionar ao DOM
             listaProdutos.appendChild(li);
           }
             
             //Coturno
             for (let i in produtosCoturnos) {
                 const produto = produtosCoturnos[i];
-                const li = document.createElement('li');
-  
-                const img = document.createElement('img');
-                const imgExib1 = document.createElement('img');
-                const imgExib2 = document.createElement('img');
-
-                img.src = produto.urlImage;
-                img.style.margin = '5px'; 
-                img.style.width = '100px'; 
-                img.style.height = 'auto';
-
-                imgExib1.src = produto.urlImageExibir1;
-                imgExib1.style.margin = '5px'; 
-                imgExib1.style.width = '100px'; 
-                imgExib1.style.height = 'auto';
-  
-                imgExib2.src = produto.urlImageExibir2;
-                imgExib2.style.margin = '5px'; 
-                imgExib2.style.width = '100px'; 
-                imgExib2.style.height = 'auto';
-                
-                li.textContent = `${produto.nome} - R$${produto.preco} - ${produto.descricao} - ${produto.tipo}`;
-                
-                const deleteBtn = document.createElement('button');
-                deleteBtn.textContent = 'Deletar';
-                deleteBtn.classList.add('delete-btn');
-                deleteBtn.onclick = () => deletarProdutoCoturno(produto.nome);
-
-                const editBtn = document.createElement('button');
-                editBtn.textContent = 'Editar Produto';
-                editBtn.classList.add('edit-btn');
-                editBtn.onclick = () => editarProdutoCoturno(i); 
-
-                const destaqueBtnCoturno = document.createElement('button');
-                destaqueBtnCoturno.textContent = 'Destaque';
-                destaqueBtnCoturno.classList.add('destaque-btn');
-                destaqueBtnCoturno.onclick = () => destacarProdutoCoturnos(i);
-
-                const tirarDestaquebtnCoturno = document.createElement('button');
-                tirarDestaquebtnCoturno.textContent = 'Tirar dos destaques';
-                tirarDestaquebtnCoturno.classList.add('tirarDestaque');
-                tirarDestaquebtnCoturno.onclick = () => tirarDestaqueCoturno(produto.nome);
-                
-                li.prepend(imgExib2);
-                li.prepend(imgExib1);
-                li.prepend(img);
-                li.appendChild(deleteBtn);
-                li.prepend(destaqueBtnCoturno);
-                li.prepend(editBtn);
-                li.appendChild(tirarDestaquebtnCoturno);
-                listaProdutos.appendChild(li);
+            const li = document.createElement('li');
+            
+            // Criar container para botões
+            const botoesContainer = document.createElement('div');
+            botoesContainer.className = 'linha-botoes';
+            
+            // Botão Editar
+            const editBtn = document.createElement('button');
+            editBtn.textContent = 'Editar';
+            editBtn.classList.add('edit-btn');
+            editBtn.onclick = () => editarProdutoCoturno(i);
+            
+            // Botão Destaque
+            const destaqueBtnTenis = document.createElement('button');
+            destaqueBtnTenis.textContent = 'Destaque';
+            destaqueBtnTenis.classList.add('destaque-btn');
+            destaqueBtnTenis.onclick = () => destacarProdutoCoturnos(i);
+            
+            // Botão Tirar Destaque
+            const tirarDestaquebtnTenis = document.createElement('button');
+            tirarDestaquebtnTenis.textContent = 'Tirar Destaque';
+            tirarDestaquebtnTenis.classList.add('tirarDestaque');
+            tirarDestaquebtnTenis.onclick = () => tirarDestaqueCoturno(produto.nome);
+            
+            // Botão Deletar
+            const deleteBtn = document.createElement('button');
+            deleteBtn.textContent = 'Deletar';
+            deleteBtn.classList.add('delete-btn');
+            deleteBtn.onclick = () => deletarProdutoCoturno(produto.nome);
+            
+            // Adiciona botões ao container
+            botoesContainer.appendChild(editBtn);
+            botoesContainer.appendChild(destaqueBtnTenis);
+            botoesContainer.appendChild(tirarDestaquebtnTenis);
+            botoesContainer.appendChild(deleteBtn);
+            
+            // Criar container para imagens
+            const imagensContainer = document.createElement('div');
+            imagensContainer.className = 'linha-imagens';
+            
+            // Criar imagens
+            const img = document.createElement('img');
+            img.src = produto.urlImage;
+            img.style.width = '100px';
+            img.style.margin = '5px';
+            
+            const imgExib1 = document.createElement('img');
+            imgExib1.src = produto.urlImageExibir1;
+            imgExib1.style.width = '100px';
+            imgExib1.style.margin = '5px';
+            
+            const imgExib2 = document.createElement('img');
+            imgExib2.src = produto.urlImageExibir2;
+            imgExib2.style.width = '100px';
+            imgExib2.style.margin = '5px';
+            
+            // Adiciona imagens ao container
+            imagensContainer.appendChild(img);
+            imagensContainer.appendChild(imgExib1);
+            imagensContainer.appendChild(imgExib2);
+            
+            // Criar container para texto
+            const textoContainer = document.createElement('div');
+            textoContainer.className = 'linha-texto';
+            textoContainer.textContent = `${produto.nome} - R$${produto.preco} - ${produto.descricao} - ${produto.tipo}`;
+            
+            // Montar a li final
+            li.appendChild(botoesContainer);
+            li.appendChild(imagensContainer);
+            li.appendChild(textoContainer);
+            
+            // Adicionar ao DOM
+            listaProdutos.appendChild(li);
             }
         }
 
